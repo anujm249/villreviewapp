@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Tooltip container */
+.tooltipp {
+  background-color: skyblue;
+  color: white;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: fixed;
+  top: -30px;
+}
+
+.notes::selection {
+  background-color: skyblue;
+  color: white;
+}
+
+.nt {
+  background-color: gold;
+  color: white;
+  cursor: pointer;
+}
+
+
+.notes::selection + .tooltiptext {
+  visibility: visible;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+  cursor: auto;
+}
+
+label {
+  font-weight: 800;
+}
